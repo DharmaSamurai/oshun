@@ -1,0 +1,861 @@
+nav.news .opacity {
+    background: black;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all 2s ease;
+}
+
+nav.news .line {
+    opacity: 1;
+    height: 1px;
+    z-index: 20;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 2s ease;
+}
+
+header.news {
+    height: 100px;
+    background: #090909;
+    margin-left: -999px;
+    padding-left: 999px;
+    margin-right: -999px;
+    padding-right: 999px;
+}
+
+main.news {
+    position: relative;
+    background: #090909;
+}
+
+main.news .nws {
+    overflow: hidden;
+    position: relative;
+    background: #090909;
+    margin-left: -999px;
+    padding-left: 999px;
+    margin-right: -999px;
+    padding-right: 999px;
+}
+
+main.news .nws .duo {
+    float: left;
+    min-height: 800px;
+}
+
+/* ARTICLES */
+main.news .nws .duo.arts {
+    width: 70%;
+}
+
+main.news .nws .duo.arts .art-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+main.news .nws .duo.arts article {
+    position: relative;
+    margin: 0;
+    padding: 25px 0;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid black;
+}
+
+main.news .nws .duo.arts article:first-child {
+    border-top: 0;
+}
+
+main.news .nws .duo.arts article h4 {
+    padding-left: 3px;
+    padding-right: 83px;
+}
+
+main.news .nws .duo.arts article h4,
+main.news .nws .duo.arts article h4 a {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #8D7E5A;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+}
+
+main.news .nws .duo.arts article h4 a {
+    transition: all .3s ease;
+}
+
+main.news .nws .duo.arts article h4 img.stars {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    opacity: .5;
+}
+
+main.news .nws .duo.arts article img.big {
+    width: 100%;
+    display: block;
+    margin: 5px 20px 10px 5px;
+}
+
+main.news .nws .duo.arts article .cntr_txt {
+    text-align: center;
+    margin: 5px 0;
+}
+
+main.news .nws .duo.arts article .cntr_txt > span,
+main.news .nws .duo.arts article .cntr_txt a {
+    position: relative;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #504833;
+    opacity: .7;
+    font-weight: bold;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all .3s ease;
+}
+
+main.news .nws .duo.arts article .cntr_txt a:hover {
+    color: #9E8D64;
+}
+
+main.news .nws .duo.arts article h4 a:hover {
+    color: #CEBF9C;
+}
+
+main.news .nws .duo.arts article .txt-wrap {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    height: 95%;
+    position: relative;
+}
+
+main.news .nws .duo.arts article .txt-wrap .fade {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(top, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 1%, rgba(8, 8, 8, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 1%, rgba(8, 8, 8, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 1%, rgba(8, 8, 8, 1) 100%);
+    background: ms-linear-gradient(top, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0) 1%, rgba(8, 8, 8, 1) 100%);
+}
+
+main.news .nws .duo.arts article .read_more {
+    margin-top: 15px;
+    text-align: right;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    z-index: 20;
+}
+
+main.news .nws .duo.arts article .read_more a {
+    color: #AC9868;
+    font-family: "Indie Flower";
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
+
+main.news .nws .duo.arts article .read_more a:hover {
+    color: #FFFFFF;
+}
+
+main.news .nws .duo.arts .art_pagination {
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #101010;
+}
+
+main.news .nws .duo.arts .art_pagination li {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #AC9868;
+    font-family: "Indie Flower";
+    font-size: 26px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main.news .nws .duo.arts .art_pagination li:hover {
+    color: #FFFFFF;
+}
+
+main.news .nws .duo.arts .art_pagination li.active {
+    cursor: default;
+    pointer-events: none;
+    color: #F48655;
+}
+
+/* SIDEBAR */
+main.news .nws .duo.sidebar {
+    width: 30%;
+}
+
+main.news .nws .duo.sidebar .blk {
+    margin: 30px 0 30px 30px;
+}
+
+main.news .nws .duo.sidebar .blk:first-child {
+    margin-top: 48px;
+}
+
+/* Search */
+main.news .nws .duo.sidebar .blk .srch {
+    position: relative;
+    overflow: hidden;
+}
+
+main.news .nws .duo.sidebar .blk .srch input {
+    width: 100%;
+    background: #090909;
+    display: block;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid #2E2718;
+    border-radius: 0;
+    color: #D7C8A6;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+main.news .nws .duo.sidebar .blk .srch input:focus {
+    border: 1px solid #554E41;
+    transition: all 0.5s ease;
+}
+
+/* Blocks */
+main.news .nws .duo.sidebar .blk h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #8D7E5A;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    margin-left: 14px;
+}
+
+main.news .nws .duo.sidebar .blk ul {
+    overflow: hidden;
+    position: relative;
+}
+
+main.news .nws .duo.sidebar .blk ul li {
+    border-bottom: 1px solid black;
+    border-top: 1px solid #101010;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+main.news .nws .duo.sidebar .blk ul li:first-child {
+    border-top: 0;
+}
+
+main.news .nws .duo.sidebar .blk ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+/* Categories sidebar block */
+ul.cat_tbs li a {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+ul.cat_tbs li a span {
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    transition: all .3s ease;
+}
+
+ul.cat_tbs li a span:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    background: url('../img/cat.png') no-repeat;
+    background-size: 8px 14px;
+    opacity: .4;
+    transition: all .3s ease;
+}
+
+ul.cat_tbs li a:hover span:before {
+    opacity: 1;
+}
+
+ul.cat_tbs li a:hover,
+ul.cat_tbs li a:hover span  {
+    background: #101010;
+    color: #8D7E5A;
+}
+
+/* Last news sidebar block */
+ul.news_tbs li {
+    height: 82px;
+}
+
+ul.news_tbs li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+ul.news_tbs li a:hover {
+    background: #101010;
+}
+
+ul.news_tbs li a:hover > div {
+    color: #8D7E5A;
+}
+
+ul.news_tbs li a:hover > .tb_img {
+    border: 1px solid #302B1C;
+}
+
+ul.news_tbs li a:hover > .tb_img img {
+    opacity: 1;
+}
+
+ul.news_tbs li a:hover > img.stars {
+    opacity: .6;
+}
+
+ul.news_tbs li .tb_img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+ul.news_tbs li .tb_img img {
+    height: 100%;
+    margin: 0;
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+ul.news_tbs li .tb_ttl {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all .3s ease;
+}
+
+ul.news_tbs li .tb_date {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    opacity: .5;
+    font-weight: bold;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+ul.news_tbs li img.stars {
+    height: 10px;
+    opacity: .3;
+    transition: all .3s ease;
+}
+
+/* Last comments sidebar block */
+ul.com_tbs li a {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+ul.com_tbs li a:hover {
+    background: #101010;
+    color: #8D7E5A;
+}
+
+ul.com_tbs li a:hover span {
+    color: #8D7E5A;
+}
+
+ul.com_tbs li span.author {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul.com_tbs li span.com {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    opacity: .5;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* Behance Feed sidebar block */
+ul.imgs li {
+    width: 33.33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0 !important;
+}
+
+ul.imgs li a {
+    margin: 8px;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+ul.imgs li a img {
+    display: block;
+    width: 100%;
+    opacity: .5;
+    outline: 1px solid #4B4024;
+    outline-offset: -1px;
+    transition: all .3s ease;
+}
+
+ul.imgs li a img:hover {
+    opacity: 1;
+}
+
+/* Tags sidebar block */
+ul.tag_tbs {
+    margin-left: 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+ul.tag_tbs li {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    margin: 2px 0;
+}
+
+ul.tag_tbs li a {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 1px 5px;
+    margin: 0;
+    display: block;
+    background: #17140D;
+    border: 1px solid #242018;
+    transition: all .3s ease;
+}
+
+ul.tag_tbs li a:hover {
+    background: #504833;
+    border: 1px solid #504833;
+    color: black;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* NEW */
+/* One Article */
+main.news .nws .duo.arts article.one h4 img.stars {
+    opacity: 1;
+}
+
+article.one .soc-wrap {
+    background: transparent;
+    padding: 20px 0;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+article.one .soc-wrap ul.soc li a {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-position: 0 0;
+    display: block;
+    opacity: .2;
+    transition: all 0.5s ease;
+}
+
+article.one .soc-wrap ul.soc li a:hover {
+    opacity: 1;
+}
+
+article.one p.share {
+    text-align: center;
+    color: #2A2A2A;
+}
+
+
+/* Comments */
+main.news .comments ul.rev_wrap {
+    overflow: hidden;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 30px 0;
+}
+
+main.news .comments ul.rev_wrap .review:last-child {
+    border: 0;
+}
+
+main.news .comments ul.rev_wrap .review {
+
+    margin: 20px 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+
+main.news .comments ul.rev_wrap .review .block_wrap {
+    position: relative;
+    overflow: visible;
+    background: #0C0C0C;
+    padding: 10px;
+    border: 1px solid #1A1815;
+}
+
+main.news .comments ul.rev_wrap .review .ava {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 12px;
+    left: -30px;
+    border: 2px solid #564E3C;
+    border-radius: 50%;
+    -webkit-filter: brightness(55%);
+    -moz-filter: brightness(55%);
+    filter: brightness(55%);
+}
+
+main.news .comments ul.rev_wrap .review .head {
+    position: relative;
+    height: 60px;
+    padding-left: 35px;
+    margin-top: 2px;
+}
+
+main.news .comments ul.rev_wrap .review h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #564E3C;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+}
+
+main.news .comments ul.rev_wrap .review .date {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.4;
+    color: #504833;
+    opacity: .5;
+    font-weight: bold;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 0;
+}
+
+main.news .comments ul.rev_wrap .review .rate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .3;
+}
+
+main.news .comments ul.rev_wrap .review p.text {
+    margin: 15px 0 25px;
+    padding-left: 5px;
+    font-size: .95em;
+    color: #564E3C;
+}
+
+main.news .comments ul.rev_wrap .review .reply {
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: .75em;
+    background: #090909;
+    color: #8E7E57;
+    font-family: "Indie Flower";
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 10px 15px 0;
+    border-radius: 80px 0 0 0;
+    transition: all .4s ease-in-out;
+}
+
+main.news .comments ul.rev_wrap .review .reply:hover {
+    color: white;
+    cursor: pointer;
+}
+
+main.news .comments ul.rev_wrap .children {
+    padding: 0;
+}
+
+main.news .comments ul.rev_wrap .children li.review {
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/* Pagination */
+main.news ul.art_pagination.new li:last-child {
+    float: right;
+}
+
+/* Add Comment Form */
+main.news .add_com {
+    display: none;
+}
+
+main.news .add_reply form {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+main.news .add_reply form > div input,
+main.news .add_reply form textarea {
+    display: block;
+    padding: 5px 10px;
+    font-size: 20px;
+    background: #0C0C0C;
+    border: 1px solid #2E2718;
+    color: #D7C8A6;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+main.news .add_reply form > div input {
+    padding: 0 8px;
+    width: 30%;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+main.news .add_reply form textarea {
+    resize: none;
+    min-height: 100px;
+    border-radius: 0;
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+}
+
+main.news .add_reply form > div input:focus,
+main.news .add_reply form textarea:focus {
+    border: 1px solid #554E41;
+    transition: all 0.5s ease;
+}
+
+main.news .add_reply form input[type="submit"] {
+    letter-spacing: 2px;
+    font-size: 20px;
+    height: 40px;
+    width: 30%;
+    float: left;
+    margin: 0 auto 30px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background: #504838;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    border: 0;
+    transition: all 0.5s ease;
+}
+
+main.news .add_reply form input[type="submit"]:hover {
+    background: #FDCDA8;
+}
+
+/* Add reply to comment */
+main.news .add_reply.to_com {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+/* Cancel Reply Button for add reply to comment */
+main.news .add_reply .cancel_rep {
+    width: 60px;
+    text-align: right;
+    color: #8E7E57;
+    font-family: "Indie Flower";
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    color: #8D7E5A;
+}
+
+main.news .add_reply .cancel_rep:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Rating stars */
+main.news .add_reply form .rating {
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 17px;
+    float: left;
+    opacity: .6;
+}
+
+main.news .add_reply form .rating .img {
+    margin: 0;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../img/news/stars/star_empty.png') no-repeat;
+    background-size: 17px 17px;
+    background-position: top left;
+}
+
+main.news .add_reply form .rating > .img {
+    width: 89px;
+}
+
+main.news .add_reply form .rating > .img > .img {
+    width: 71px;
+}
+
+main.news .add_reply form .rating > .img > .img > .img {
+    width: 53px;
+}
+
+main.news .add_reply form .rating > .img > .img > .img > .img {
+    width: 35px;
+}
+
+main.news .add_reply form .rating > .img > .img > .img > .img > .img {
+    width: 17px;
+}
+
+main.news .add_reply form .rating .img:hover {
+    background: url('../img/news/stars/star_filled.png') no-repeat;
+    background-size: 17px 17px;
+    background-position: top left;
+}
+
+/* 404 */
+main.page_404 h4 {
+    color: #EBE1C6;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 25%;
+}
+
+main.page_404 h1 {
+    font-size: 110px;
+}
+
+main.page_404 div.h2 {
+    margin-top: 0;
+}
+
+main.page_404 div.h2 a.txt:hover {
+    color: white;
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+Hello!
+Thank you for purchasing "OSHUN - One Page Visit Card/HTML Template"!
+My name is Ada King, and I'll tell you how to use this template. It's very easy!
+
+For to see all functionality of website you have use local web-server, open terminal in folder with index.html and paste next:
+php -S localhost:3000
+
+After it you will able to see this HTML Template by link "localhost:3000" in your browser
+
+And in source folder you can see 4 html files, index.html, of course, is main page. 
+Folders contains next files:
+1. css - files for styles, responsiveness, sprites and connecting fonts.
+2. fonts - fonts used in project downloaded from Google Fonts (Indie Flower, Poiret One, Raleway).
+Also you can download them by link: 
+https://www.google.com/fonts#ChoosePlace:select/Collection:Poiret+One|Indie+Flower|Raleway
+
+3. img - images divided in folders:
+
+3.1. avatars - userpics of visitors of web-site
+3.2. contact - images in contact section (footer)
+3.3. news - images of articles in blog
+3.4. pf - your masterpieces in portfolio
+3.5. slider - images for slider on top of index.html
+3.6. social - icons of social media
+3.7. sr - images in Service section
+
+4. js - JavaScript (JQuery) scripts
+
+script.js - scripts for index.html
+other.js - scripts for all pages except index.html
+
+All code is well commented, so, you will able easy use and adjust it.
+
+Anyway, if you have any questions just contact me:
+http://graphicriver.net/user/ada_king?ref=Ada_King
+And I will help you ASAP (don't forget about your buyer ID please).
+Also after buying this template you will able to get all updates for free.
+So, monitor announcements!
+Thank you!

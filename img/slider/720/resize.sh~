@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir thumbs290
+for f in *.jpg; do
+convert $f -resize 700 thumbs/${f%%JPG}
+done

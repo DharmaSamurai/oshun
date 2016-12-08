@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Indie_Flower/IndieFlower.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Poiret One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+}
